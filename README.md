@@ -1,37 +1,21 @@
-# IT Infrastructure & Security Portfolio
+# My IT & Systems Portfolio
 
-Welcome! This repository is a collection of my hands-on projects, scripts, and configuration files. It showcases my skills in **Systems Administration**, **Network Operations (NOC)**, and **Security Operations (SOC)**.
+Welcome to my portfolio! This is a simple repository where I save my scripts, configuration files, and documentation as I learn more about Systems Administration, Networking, and Cybersecurity.
 
-Rather than hosting multiple separate repositories, I have organized my work into specialized directories below.
-
----
-
-## 📂 Portfolio Roadmap & Directory Map
-
-### 🖥️ 1. Systems Administration (`/sysadmin`)
-Focuses on automation, scripting, and server maintenance.
-*   **[update.sh](/sysadmin/update.sh):** A lightweight Bash script that automates package updates and cache cleanup on Arch Linux.
-*   *(Up Next)* Python automation scripts for parsing logs and managing backups.
-
-### 🌐 2. Network Operations (`/noc`)
-Focuses on network diagnostics, monitoring, and home lab configurations.
-*   *(Up Next)* Prometheus and Grafana container setups for resource monitoring.
-*   *(Up Next)* Cisco Packet Tracer network topology diagrams and configuration guides.
-
-### 🛡️ 3. Security Operations (`/soc`)
-Focuses on log monitoring, threat detection, and packet analysis.
-*   *(Up Next)* Wireshark sniffing reports (analyzing `.pcap` files for suspicious activities).
-*   *(Up Next)* Brute-force detection scripts (monitoring `/var/log/auth.log` for failed SSH logins).
-*   *(Up Next)* Wazuh/SIEM alert configuration rules.
-
-### 👥 4. Active Directory Documentation (`/active-directory`)
-Detailed write-ups of my local enterprise home lab designs.
-*   *(Up Next)* Active Directory structure layout (organizational units, groups, and GPOs).
-*   *(Up Next)* GPO policies (restricting control panel access, mapping network drives) and DHCP scope reservations.
+Right now, I am using this space to save useful scripts I write for my own computer or home lab.
 
 ---
 
-## 🛠️ Skills Demonstrated Here
-*   **Operating Systems:** Linux (Arch, Ubuntu), Windows Server 2022
-*   **Scripting Languages:** Bash, Python, PowerShell
-*   **Tools & Protocols:** TCP/IP, DNS, DHCP, Git, Wireshark, GPOs, AD DS
+## 📁 What's inside?
+
+*   **[sysadmin/](/sysadmin):** A folder where I keep scripts to help automate tasks.
+    *   **[update.sh](/sysadmin/update.sh):** A simple script I wrote to quickly update my Arch Linux system and clean up old files to save disk space.
+
+---
+
+## 🎯 My Goals
+
+*   Write more automation scripts in Bash, Python, and PowerShell.
+*   Document my networking practice (using tools like Wireshark).
+*   Share configuration details of my Windows Server and Active Directory home labs.
+*   Practice detecting basic security issues like failed logins and brute-force attempts.
