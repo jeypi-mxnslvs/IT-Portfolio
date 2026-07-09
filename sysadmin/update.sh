@@ -3,12 +3,13 @@ echo "=== Starting Arch Linux Update ==="
 echo "Started at: $(date)"
 echo ""
 
-# Update packages
-echo "Updating system packages..."
+# Update all packages
+echo "Upgrading system packages..."
 sudo pacman -Syu --no-confirm
 
+# Clean up old packages to save disk space
 echo "Cleaning up package cache..."
 sudo pacman -Sc --no-confirm
 
 echo ""
-echo "=== System update completed ==="
+echo "=== System update completed successfully! ==="
