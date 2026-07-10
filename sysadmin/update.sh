@@ -5,11 +5,11 @@ echo ""
 
 # Update all packages
 echo "Upgrading system packages..."
-sudo pacman -Syu --no-confirm
+sudo pacman -Syu --noconfirm
 
 # Clean up old packages to save disk space
 echo "Cleaning up package cache..."
-sudo pacman -Sc --no-confirm
+sudo pacman -Sc --noconfirm
 
 echo ""
 echo "=== System update completed successfully! ==="
