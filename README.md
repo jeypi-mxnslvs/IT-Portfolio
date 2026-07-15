@@ -11,6 +11,8 @@ Right now, I am using this space to save useful scripts I write for my own compu
 *   **[sysadmin/scripts](/sysadmin/scripts):** A folder where I keep scripts to help automate tasks.
     *   **[update.sh](/sysadmin/scripts/update.sh):** A simple script I wrote to quickly update my Arch Linux system and clean up old files to save disk space.
     *	**[pdf_organizer.py](/sysadmin/scripts/pdf_organizer.py):** A lightweight Python script that automatically keeps your `Downloads` folder clean by organizing PDF documents.
+    *   **[smart_sorter.py](/sysadmin/scripts/smart_sorter.py):** A Python script that scans a directory, matches file extensions against a custom ruleset, and automatically creates folders to sort files into their correct directories.
+
 
 ---
 
