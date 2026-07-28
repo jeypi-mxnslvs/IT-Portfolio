@@ -1,24 +1,77 @@
-# My IT & Systems Portfolio
+# 🏢 Enterprise Active Directory & Group Policy Home Lab
 
-Welcome to my portfolio! This is a simple repository where I save my scripts, configuration files, and documentation as I learn more about Systems Administration, Networking, and Cybersecurity.
-
-Right now, I am using this space to save useful scripts I write for my own computer or home lab.
-
----
-
-## 📁 What's inside?
-
-*   **[sysadmin/scripts](/sysadmin/scripts):** A folder where I keep scripts to help automate tasks.
-    *   **[update.sh](/sysadmin/scripts/update.sh):** A simple script I wrote to quickly update my Arch Linux system and clean up old files to save disk space.
-    *	**[pdf_organizer.py](/sysadmin/scripts/pdf_organizer.py):** A lightweight Python script that automatically keeps your `Downloads` folder clean by organizing PDF documents.
-    *   **[smart_sorter.py](/sysadmin/scripts/smart_sorter.py):** A Python script that scans a directory, matches file extensions against a custom ruleset, and automatically creates folders to sort files into their correct directories.
-
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![OS](https://img.shields.io/badge/OS-Windows%20Server%202022-blue)
+![Hypervisor](https://img.shields.io/badge/Hypervisor-VirtualBox%20%2F%20VMware-orange)
 
 ---
 
-## 🎯 My Goals
+## 📑 Table of Contents
+1. [Network Topology & Specifications](#1-network-topology--specifications)
+2. [Windows Server Installation & Initial Setup](#2-windows-server-installation--initial-setup)
+3. [AD DS Installation & Domain Controller Promotion](#3-ad-ds-installation--domain-controller-promotion)
+4. [DNS & DHCP Configuration](#4-dns--dhcp-configuration)
+5. [Organizational Units & User Provisioning](#5-organizational-units--user-provisioning)
+6. [Group Policy Object (GPO) Deployment](#6-group-policy-object-gpo-deployment)
+7. [Verification & Client Domain Join](#7-verification--client-domain-join)
+8. [Troubleshooting & Lessons Learned](#8-troubleshooting--lessons-learned)
 
-*   Write more automation scripts in Bash, Python, and PowerShell.
-*   Document my networking practice (using tools like Wireshark).
-*   Share configuration details of my Windows Server and Active Directory home labs.
-*   Practice detecting basic security issues like failed logins and brute-force attempts.
+
+---
+
+## 1. Network Topology & Specifications
+
+
+## 2. Windows Server Installation & Initial Setup
+
+### Installation Walkthrough
+1. Installed **Windows Server 2022 Standard (Desktop Experience)** on the primary virtual machine.
+2. Configured the virtual network interface to use a **Default Switch / Private Switch**.
+
+### Post-Installation Configuration
+Before installing Active Directory:
+	Computer Name:
+	Static IP: 192.168.10.1/24
+	Preferred DNS: 127.0.0.1
+# Figure 1: Static IP Configuration on DC01
+
+## 3. Active Directory Installation
+Installing AD DS
+	Installed the **Active Directory Domain Services** role.
+	Promoted the server as the first Domain Controller.
+	Created a new forest:
+	```
+	home.local
+	```
+
+## PowerShell
+
+### Install AD DS
+Install-WindowsFeature `
+	-Name AD-Domain-Services `
+	-IncludeManagementTools
+
+### Create Forest
+Install-ADDSForest `
+	-DomainName "home.local" `
+	-InstallDNS `
+	-Force
+# Figure 2: Successful promotion of DC01
+
+# 4. DNS & DHCP Configuration
+
+
+# 5. Organizational Units
+OU Structure
+```
+	home.local
+	└── HOME_OU
+	    ├── Departments
+	    │   ├── IT
+	    │   ├── HR
+	    │   └── Sales
+	    ├── Groups
+	    └── Computers
+```
+# Figure 3: Photo of OU Structure
+# Figure 4: Create a User
