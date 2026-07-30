@@ -30,11 +30,11 @@
 
 ### Post-Installation Configuration
 Before installing Active Directory:
-`
+`"
 	Computer Name: DC01
 	Static IP: 192.168.10.1/24
 	Preferred DNS: 127.0.0.1
-`
+"`
 ### Figure 1: Static IP Configuration on DC01
 
 ## 3. Active Directory Installation
