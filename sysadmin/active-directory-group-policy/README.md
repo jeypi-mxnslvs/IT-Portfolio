@@ -26,20 +26,20 @@
 
 ### Installation Walkthrough
 1. Installed **Windows Server 2022 Standard (Desktop Experience)** on the primary virtual machine.
-2. Configured the virtual network interface to use a **Default Switch / Private Switch**.
+\n2. Configured the virtual network interface to use a **Default Switch / Private Switch**.
 
 ### Post-Installation Configuration
 Before installing Active Directory:
-	Computer Name:
-	Static IP: 192.168.10.1/24
-	Preferred DNS: 127.0.0.1
-# Figure 1: Static IP Configuration on DC01
+	\nComputer Name:
+	\nStatic IP: 192.168.10.1/24
+	\nPreferred DNS: 127.0.0.1
+### Figure 1: Static IP Configuration on DC01
 
 ## 3. Active Directory Installation
 Installing AD DS
 	Installed the **Active Directory Domain Services** role.
-	Promoted the server as the first Domain Controller.
-	Created a new forest:
+	\nPromoted the server as the first Domain Controller.
+	\nCreated a new forest:
 	```
 	home.local
 	```
@@ -47,21 +47,25 @@ Installing AD DS
 ## PowerShell
 
 ### Install AD DS
-Install-WindowsFeature `
-	-Name AD-Domain-Services `
+`
+Install-WindowsFeature 
+	-Name AD-Domain-Services
 	-IncludeManagementTools
+`
 
 ### Create Forest
-Install-ADDSForest `
-	-DomainName "home.local" `
-	-InstallDNS `
+`
+Install-ADDSForest 
+	-DomainName "home.local" 
+	-InstallDNS 
 	-Force
-# Figure 2: Successful promotion of DC01
+`
+### Figure 2: Successful promotion of DC01
 
-# 4. DNS & DHCP Configuration
+## 4. DNS & DHCP Configuration
 
 
-# 5. Organizational Units
+## 5. Organizational Units
 OU Structure
 ```
 	home.local
@@ -73,5 +77,5 @@ OU Structure
 	    ├── Groups
 	    └── Computers
 ```
-# Figure 3: Photo of OU Structure
-# Figure 4: Create a User
+### Figure 3: Photo of OU Structure
+### Figure 4: Create a User
