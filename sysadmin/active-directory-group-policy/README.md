@@ -26,20 +26,20 @@
 
 ### Installation Walkthrough
 1. Installed **Windows Server 2022 Standard (Desktop Experience)** on the primary virtual machine.
-\n2. Configured the virtual network interface to use a **Default Switch / Private Switch**.
+2. Configured the virtual network interface to use a **Default Switch / Private Switch**.
 
 ### Post-Installation Configuration
 Before installing Active Directory:
-	\nComputer Name:
-	\nStatic IP: 192.168.10.1/24
-	\nPreferred DNS: 127.0.0.1
+	Computer Name:
+	Static IP: 192.168.10.1/24
+	Preferred DNS: 127.0.0.1
 ### Figure 1: Static IP Configuration on DC01
 
 ## 3. Active Directory Installation
 Installing AD DS
 	Installed the **Active Directory Domain Services** role.
-	\nPromoted the server as the first Domain Controller.
-	\nCreated a new forest:
+	Promoted the server as the first Domain Controller.
+	Created a new forest:
 	```
 	home.local
 	```
