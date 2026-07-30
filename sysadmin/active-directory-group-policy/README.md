@@ -38,15 +38,13 @@ Before installing Active Directory:
 ### Figure 1: Static IP Configuration on DC01
 
 ## 3. Active Directory Installation
-Installing AD DS
+Installing AD DS:
 ```
 	Installed the **Active Directory Domain Services** role.
 	Promoted the server as the first Domain Controller.
 	Created a new forest:
-```
-	```
 	home.local
-	```
+```	
 
 ## PowerShell
 
