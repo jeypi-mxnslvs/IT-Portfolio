@@ -1,24 +1,35 @@
-# My IT & Systems Portfolio
+# 🏢 Jan Paul Mensalvas | IT & Systems Portfolio
 
-Welcome to my portfolio! This is a simple repository where I save my scripts, configuration files, and documentation as I learn more about Systems Administration, Networking, and Cybersecurity.
-
-Right now, I am using this space to save useful scripts I write for my own computer or home lab.
+Welcome to my portfolio! This repository documents my hands-on projects, automation scripts, and lab configurations across **Systems Administration**, **Active Directory Infrastructure**, and **Network Operations**.
 
 ---
 
-## 📁 What's inside?
+## 📁 Portfolio Projects & Directory Structure
 
-*   **[sysadmin/scripts](/sysadmin/scripts):** A folder where I keep scripts to help automate tasks.
-    *   **[update.sh](/sysadmin/scripts/update.sh):** A simple script I wrote to quickly update my Arch Linux system and clean up old files to save disk space.
-    *	**[pdf_organizer.py](/sysadmin/scripts/pdf_organizer.py):** A lightweight Python script that automatically keeps your `Downloads` folder clean by organizing PDF documents.
-    *   **[smart_sorter.py](/sysadmin/scripts/smart_sorter.py):** A Python script that scans a directory, matches file extensions against a custom ruleset, and automatically creates folders to sort files into their correct directories.
-
+### 🔹 1. Active Directory & Enterprise Infrastructure
+* **[sysadmin/active-directory-group-policy](./sysadmin/active-directory-group-policy)**
+  * Full step-by-step visual documentation of building an **Active Directory Domain Services (AD DS)** infrastructure and **Enterprise File Server** on Windows Server 2022.
+  * Demonstrates **AGDLP Role-Based Access Control**, NTFS permission hardening, DNS Reverse Lookup Zones, and Hyper-V Gen 2 VM provisioning.
 
 ---
 
-## 🎯 My Goals
+### 🔹 2. Automation & Administration Scripts (`/sysadmin/scripts`)
 
-*   Write more automation scripts in Bash, Python, and PowerShell.
-*   Document my networking practice (using tools like Wireshark).
-*   Share configuration details of my Windows Server and Active Directory home labs.
-*   Practice detecting basic security issues like failed logins and brute-force attempts.
+* **[sysadmin/scripts/bash](./sysadmin/scripts/bash)**
+  * **[update.sh](./sysadmin/scripts/bash/update.sh):** System update and package cache cleaning script for Linux systems.
+
+* **[sysadmin/scripts/powershell](./sysadmin/scripts/powershell)**
+  * **[Populate-IT-Users.ps1](./sysadmin/scripts/powershell/Populate-IT-Users.ps1):** Automated Active Directory user account creation script with `-WhatIf` dry-run support.
+
+* **[sysadmin/scripts/python](./sysadmin/scripts/python)**
+  * **[pdf_organizer.py](./sysadmin/scripts/python/pdf_organizer.py):** Python script that organizes downloaded PDF documents automatically.
+  * **[smart_sorter.py](./sysadmin/scripts/python/smart_sorter.py):** Python script that scans directories and sorts files based on custom extension rules.
+
+---
+
+## 🎯 Completed & Current Goals
+
+- [x] **Active Directory Lab:** Build and document Windows Server 2022 AD DS, DNS, and AGDLP File Share hardening.
+- [x] **PowerShell Automation:** Build production-grade user provisioning script with `-WhatIf` and error handling.
+- [x] **Linux & Python Automation:** Build shell and Python utilities for file sorting and system updates.
+- [ ] **Network Diagnostics:** Document packet captures and network topology in Wireshark / Cisco Packet Tracer.
