@@ -20,7 +20,11 @@
 ---
 
 ## 1. Network Topology & Specifications
-
+    ```mermaid
+    flowchart TD
+        Client["Client Workstation\n10.10.20.5"] --> DC01["DC01 Domain Controller\n10.10.10.10"]
+        DC01 -- "Entra Connect (HTTPS 443)" --> Cloud["Microsoft Entra ID Cloud"]
+    ```
 
 ## 2. Windows Server Installation & Initial Setup
 
